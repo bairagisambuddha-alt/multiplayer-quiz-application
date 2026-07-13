@@ -360,6 +360,10 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(PORT, () => {
-  console.log(`Quiz Duel is running at http://localhost:${PORT}`);
-});
+if (require.main === module) {
+  server.listen(PORT, () => {
+    console.log(`Quiz Duel is running at http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;

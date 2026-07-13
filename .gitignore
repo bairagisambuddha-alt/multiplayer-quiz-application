@@ -1,37 +1,10 @@
-# Node modules
 node_modules/
-
-# Environment variables
 .env
-
-# Logs
-logs/
-*.log
+.env.local
+.vercel/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# OS files
+.vscode/
 .DS_Store
 Thumbs.db
-
-# VS Code
-.vscode/
-
-# IntelliJ / WebStorm
-.idea/
-
-# Build output
-dist/
-build/
-
-# Coverage
-coverage/
-
-# Temporary files
-*.tmp
-*.cache
-
-# Optional lock files (keep package-lock.json if you use npm)
-# yarn.lock
-# pnpm-lock.yaml
