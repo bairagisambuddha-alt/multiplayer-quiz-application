@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Duel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background-shape shape-one"></div>
+  <div class="background-shape shape-two"></div>
+
+  <main class="app-shell">
+    <header class="brand">
+      <div class="logo-mark">⚡</div>
+      <div>
+        <h1>Quiz Duel</h1>
+        <p>Fast answers. Big points. One winner.</p>
+      </div>
+    </header>
+
+    <section id="home-screen" class="screen active">
+      <div class="hero-card">
+        <span class="eyebrow">REAL-TIME 1 VS 1</span>
+        <h2>Challenge a friend to a live quiz battle.</h2>
+        <p>Create a private room or join using a six-character code.</p>
+
+        <div class="mode-grid">
+          <button id="show-create" class="mode-card primary-card">
+            <span class="mode-icon">🏆</span>
+            <strong>Create Battle</strong>
+            <small>Choose quiz settings and invite a friend</small>
+          </button>
+
+          <button id="show-join" class="mode-card secondary-card">
+            <span class="mode-icon">🎮</span>
+            <strong>Join Battle</strong>
+            <small>Enter a room code and start competing</small>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="create-screen" class="screen">
+      <div class="panel">
+        <button class="back-button" data-back>← Back</button>
+        <h2>Create your battle</h2>
+        <p class="muted">Set up the challenge. You will receive a room code to share.</p>
+
+        <form id="create-form" class="form-stack">
+          <label>
+            Your name
+            <input id="create-name" maxlength="20" placeholder="Enter your name" required />
+          </label>
+
+          <div class="two-column">
+            <label>
+              Topic
+              <select id="topic">
+                <option>Mixed</option>
+                <option>Science</option>
+                <option>Math</option>
+                <option>Geography</option>
+                <option>Technology</option>
+                <option>General Knowledge</option>
+              </select>
+            </label>
+
+            <label>
+              Difficulty
+              <select id="difficulty">
+                <option>Mixed</option>
+                <option>Easy</option>
+                <option>Medium</option>
+                <option>Hard</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="two-column">
+            <label>
+              Questions
+              <select id="question-count">
+                <option value="3">3 questions</option>
+                <option value="5" selected>5 questions</option>
+                <option value="7">7 questions</option>
+                <option value="10">10 questions</option>
+              </select>
+            </label>
+
+            <label>
+              Time per question
+              <select id="question-time">
+                <option value="10">10 seconds</option>
+                <option value="15">15 seconds</option>
+                <option value="20" selected>20 seconds</option>
+                <option value="30">30 seconds</option>
+              </select>
+            </label>
+          </div>
+
+          <button class="action-button" type="submit">Create Room</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="join-screen" class="screen">
+      <div class="panel narrow">
+        <button class="back-button" data-back>← Back</button>
+        <h2>Join a battle</h2>
+        <p class="muted">Ask the host for the room code.</p>
+
+        <form id="join-form" class="form-stack">
+          <label>
+            Your name
+            <input id="join-name" maxlength="20" placeholder="Enter your name" required />
+          </label>
+
+          <label>
+            Room code
+            <input id="room-code-input" class="room-input" maxlength="6" placeholder="ABC123" required />
+          </label>
+
+          <button class="action-button" type="submit">Join Room</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="lobby-screen" class="screen">
+      <div class="panel lobby-panel">
+        <span class="eyebrow">PRIVATE ROOM</span>
+        <h2>Battle lobby</h2>
+        <p>Share this code with your opponent:</p>
+
+        <div class="room-code-box">
+          <span id="lobby-code">------</span>
+          <button id="copy-code">Copy</button>
+        </div>
+
+        <div id="lobby-settings" class="settings-summary"></div>
+
+        <div class="players-grid" id="lobby-players"></div>
+
+        <div id="waiting-message" class="waiting-box">
+          <span class="spinner"></span>
+          Waiting for an opponent...
+        </div>
+
+        <button id="start-quiz" class="action-button hidden">Start Quiz</button>
+      </div>
+    </section>
+
+    <section id="quiz-screen" class="screen">
+      <div class="quiz-layout">
+        <div class="quiz-topbar">
+          <div>
+            <span id="question-counter">Question 1 of 5</span>
+            <div class="progress-track">
+              <div id="progress-fill"></div>
+            </div>
+          </div>
+
+          <div id="timer-circle" class="timer-circle">
+            <span id="timer-value">20</span>
+          </div>
+        </div>
+
+        <div class="scoreboard" id="scoreboard"></div>
+
+        <article class="question-card">
+          <div class="question-meta">
+            <span id="question-topic"></span>
+            <span id="question-difficulty"></span>
+          </div>
+          <h2 id="question-text"></h2>
+        </article>
+
+        <div id="answers-grid" class="answers-grid"></div>
+
+        <div id="answer-feedback" class="feedback hidden"></div>
+      </div>
+    </section>
+
+    <section id="result-screen" class="screen">
+      <div class="panel result-panel">
+        <div id="result-icon" class="result-icon">🏆</div>
+        <span class="eyebrow">FINAL RESULT</span>
+        <h2 id="result-title">Winner!</h2>
+        <div id="final-scores" class="final-scores"></div>
+        <button id="play-again" class="action-button hidden">Play Again</button>
+        <button id="return-home" class="secondary-button">Return Home</button>
+      </div>
+    </section>
+
+    <div id="toast" class="toast"></div>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,392 @@
+[
+  {
+    "topic": "Science",
+    "difficulty": "Easy",
+    "prompt": "Which planet is known as the Red Planet?",
+    "options": [
+      "Earth",
+      "Mars",
+      "Venus",
+      "Jupiter"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mars appears red because of iron oxide on its surface."
+  },
+  {
+    "topic": "Science",
+    "difficulty": "Easy",
+    "prompt": "What gas do plants absorb from the atmosphere?",
+    "options": [
+      "Oxygen",
+      "Hydrogen",
+      "Carbon dioxide",
+      "Nitrogen"
+    ],
+    "correctIndex": 2,
+    "explanation": "Plants absorb carbon dioxide during photosynthesis."
+  },
+  {
+    "topic": "Science",
+    "difficulty": "Medium",
+    "prompt": "What is the SI unit of electric current?",
+    "options": [
+      "Volt",
+      "Ampere",
+      "Ohm",
+      "Watt"
+    ],
+    "correctIndex": 1,
+    "explanation": "Electric current is measured in amperes."
+  },
+  {
+    "topic": "Science",
+    "difficulty": "Medium",
+    "prompt": "Which organelle is called the powerhouse of the cell?",
+    "options": [
+      "Nucleus",
+      "Ribosome",
+      "Mitochondrion",
+      "Vacuole"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mitochondria release usable energy from food."
+  },
+  {
+    "topic": "Science",
+    "difficulty": "Hard",
+    "prompt": "What is the atomic number of carbon?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "correctIndex": 1,
+    "explanation": "Carbon has six protons, so its atomic number is 6."
+  },
+  {
+    "topic": "Science",
+    "difficulty": "Hard",
+    "prompt": "Which law relates voltage, current and resistance?",
+    "options": [
+      "Newton's law",
+      "Ohm's law",
+      "Boyle's law",
+      "Hooke's law"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ohm's law states V = IR."
+  },
+  {
+    "topic": "Math",
+    "difficulty": "Easy",
+    "prompt": "What is 12 \u00d7 8?",
+    "options": [
+      "86",
+      "96",
+      "108",
+      "88"
+    ],
+    "correctIndex": 1,
+    "explanation": "12 multiplied by 8 equals 96."
+  },
+  {
+    "topic": "Math",
+    "difficulty": "Easy",
+    "prompt": "What is the square root of 81?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "correctIndex": 2,
+    "explanation": "9 \u00d7 9 = 81."
+  },
+  {
+    "topic": "Math",
+    "difficulty": "Medium",
+    "prompt": "What is 15% of 200?",
+    "options": [
+      "15",
+      "20",
+      "30",
+      "40"
+    ],
+    "correctIndex": 2,
+    "explanation": "0.15 \u00d7 200 = 30."
+  },
+  {
+    "topic": "Math",
+    "difficulty": "Medium",
+    "prompt": "Solve: 3x + 5 = 20",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "3x = 15, so x = 5."
+  },
+  {
+    "topic": "Math",
+    "difficulty": "Hard",
+    "prompt": "What is the value of 2\u00b3 \u00d7 2\u00b2?",
+    "options": [
+      "16",
+      "24",
+      "32",
+      "64"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add exponents: 2\u2075 = 32."
+  },
+  {
+    "topic": "Math",
+    "difficulty": "Hard",
+    "prompt": "A triangle has angles 35\u00b0 and 65\u00b0. What is the third angle?",
+    "options": [
+      "70\u00b0",
+      "80\u00b0",
+      "90\u00b0",
+      "100\u00b0"
+    ],
+    "correctIndex": 1,
+    "explanation": "Angles in a triangle total 180\u00b0, so the answer is 80\u00b0."
+  },
+  {
+    "topic": "Geography",
+    "difficulty": "Easy",
+    "prompt": "Which is the largest ocean?",
+    "options": [
+      "Atlantic",
+      "Indian",
+      "Pacific",
+      "Arctic"
+    ],
+    "correctIndex": 2,
+    "explanation": "The Pacific Ocean is the largest ocean."
+  },
+  {
+    "topic": "Geography",
+    "difficulty": "Easy",
+    "prompt": "What is the capital of Japan?",
+    "options": [
+      "Seoul",
+      "Tokyo",
+      "Kyoto",
+      "Beijing"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tokyo is the capital of Japan."
+  },
+  {
+    "topic": "Geography",
+    "difficulty": "Medium",
+    "prompt": "Which river flows through Egypt?",
+    "options": [
+      "Amazon",
+      "Nile",
+      "Danube",
+      "Yangtze"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Nile flows through Egypt."
+  },
+  {
+    "topic": "Geography",
+    "difficulty": "Medium",
+    "prompt": "Which continent has the most countries?",
+    "options": [
+      "Asia",
+      "Europe",
+      "Africa",
+      "South America"
+    ],
+    "correctIndex": 2,
+    "explanation": "Africa has the largest number of internationally recognised countries."
+  },
+  {
+    "topic": "Geography",
+    "difficulty": "Hard",
+    "prompt": "Which country is completely surrounded by South Africa?",
+    "options": [
+      "Eswatini",
+      "Lesotho",
+      "Botswana",
+      "Namibia"
+    ],
+    "correctIndex": 1,
+    "explanation": "Lesotho is an enclave within South Africa."
+  },
+  {
+    "topic": "Geography",
+    "difficulty": "Hard",
+    "prompt": "The Strait of Gibraltar connects the Atlantic Ocean with which sea?",
+    "options": [
+      "Red Sea",
+      "Mediterranean Sea",
+      "Black Sea",
+      "Arabian Sea"
+    ],
+    "correctIndex": 1,
+    "explanation": "It connects the Atlantic Ocean and the Mediterranean Sea."
+  },
+  {
+    "topic": "Technology",
+    "difficulty": "Easy",
+    "prompt": "What does CPU stand for?",
+    "options": [
+      "Central Processing Unit",
+      "Computer Personal Unit",
+      "Central Program Utility",
+      "Core Processing User"
+    ],
+    "correctIndex": 0,
+    "explanation": "CPU stands for Central Processing Unit."
+  },
+  {
+    "topic": "Technology",
+    "difficulty": "Easy",
+    "prompt": "Which language is mainly used to style web pages?",
+    "options": [
+      "HTML",
+      "CSS",
+      "SQL",
+      "Python"
+    ],
+    "correctIndex": 1,
+    "explanation": "CSS controls website layout and visual styling."
+  },
+  {
+    "topic": "Technology",
+    "difficulty": "Medium",
+    "prompt": "Which protocol is commonly used for secure websites?",
+    "options": [
+      "FTP",
+      "HTTP",
+      "HTTPS",
+      "SMTP"
+    ],
+    "correctIndex": 2,
+    "explanation": "HTTPS encrypts traffic between the browser and server."
+  },
+  {
+    "topic": "Technology",
+    "difficulty": "Medium",
+    "prompt": "What does API stand for?",
+    "options": [
+      "Application Programming Interface",
+      "Automated Program Input",
+      "Applied Processing Internet",
+      "Application Program Installation"
+    ],
+    "correctIndex": 0,
+    "explanation": "API stands for Application Programming Interface."
+  },
+  {
+    "topic": "Technology",
+    "difficulty": "Hard",
+    "prompt": "Which data structure follows FIFO?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Tree",
+      "Graph"
+    ],
+    "correctIndex": 1,
+    "explanation": "A queue follows First In, First Out."
+  },
+  {
+    "topic": "Technology",
+    "difficulty": "Hard",
+    "prompt": "Which command creates a new Git repository?",
+    "options": [
+      "git start",
+      "git create",
+      "git init",
+      "git open"
+    ],
+    "correctIndex": 2,
+    "explanation": "The git init command initializes a repository."
+  },
+  {
+    "topic": "General Knowledge",
+    "difficulty": "Easy",
+    "prompt": "How many days are in a leap year?",
+    "options": [
+      "364",
+      "365",
+      "366",
+      "367"
+    ],
+    "correctIndex": 2,
+    "explanation": "A leap year has 366 days."
+  },
+  {
+    "topic": "General Knowledge",
+    "difficulty": "Easy",
+    "prompt": "Which instrument has black and white keys?",
+    "options": [
+      "Guitar",
+      "Violin",
+      "Piano",
+      "Flute"
+    ],
+    "correctIndex": 2,
+    "explanation": "A piano keyboard has black and white keys."
+  },
+  {
+    "topic": "General Knowledge",
+    "difficulty": "Medium",
+    "prompt": "Who painted the Mona Lisa?",
+    "options": [
+      "Vincent van Gogh",
+      "Leonardo da Vinci",
+      "Pablo Picasso",
+      "Claude Monet"
+    ],
+    "correctIndex": 1,
+    "explanation": "Leonardo da Vinci painted the Mona Lisa."
+  },
+  {
+    "topic": "General Knowledge",
+    "difficulty": "Medium",
+    "prompt": "Which sport uses the terms love, deuce and ace?",
+    "options": [
+      "Cricket",
+      "Tennis",
+      "Football",
+      "Hockey"
+    ],
+    "correctIndex": 1,
+    "explanation": "These are tennis scoring terms."
+  },
+  {
+    "topic": "General Knowledge",
+    "difficulty": "Hard",
+    "prompt": "Which ancient wonder was located in Alexandria?",
+    "options": [
+      "Hanging Gardens",
+      "Colossus of Rhodes",
+      "Lighthouse of Alexandria",
+      "Temple of Artemis"
+    ],
+    "correctIndex": 2,
+    "explanation": "The Lighthouse of Alexandria stood on the island of Pharos."
+  },
+  {
+    "topic": "General Knowledge",
+    "difficulty": "Hard",
+    "prompt": "What is the smallest prime number?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "2 is the smallest and the only even prime number."
+  }
+]
